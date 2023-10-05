@@ -6,22 +6,31 @@ package exercicio.ado;
 
 /**
 
- * @author Crist
+ * @author Cristian e Claudio
  */
 public class Principal {
     public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa("João", 30);
+        Pessoa pessoa = new Pessoa("João", 25, "Solteiro", "123.456.789-00", "1234567-8", "01/01/1990");
 
-        // Exibe informações iniciais da pessoa
         System.out.println("Nome: " + pessoa.getNome());
         System.out.println("Idade: " + pessoa.getIdade());
+        System.out.println("Estado Civil: " + pessoa.getEstadoCivil());
+        System.out.println("CPF: " + pessoa.getCpf());
+        System.out.println("RG: " + pessoa.getRg());
+        System.out.println("Data de Nascimento: " + pessoa.getDataNascimento());
 
-        // Modifica as informações da pessoa
         pessoa.setNome("Maria");
-        pessoa.setIdade(25);
+        pessoa.setIdade(30);
+        pessoa.setEstadoCivil("Casada");
+        pessoa.setCpf("987.654.321-00");
+        pessoa.setRg("8765432-1");
+        pessoa.setDataNascimento("15/05/1985");
 
-        // Exibe as informações modificadas da pessoa
-        System.out.println("Nome modificado: " + pessoa.getNome());
-        System.out.println("Idade modificada: " + pessoa.getIdade());
+        System.out.println("\nNovo Nome: " + pessoa.getNome());
+        System.out.println("Nova Idade: " + pessoa.getIdade());
+        System.out.println("Novo Estado Civil: " + pessoa.getEstadoCivil());
+        System.out.println("Novo CPF: " + pessoa.getCpf());
+        System.out.println("Novo RG: " + pessoa.getRg());
+        System.out.println("Nova Data de Nascimento: " + pessoa.getDataNascimento());
     }
 }
